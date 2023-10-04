@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Hexashop - Product Listing Page</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-hexashop.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lightbox.css')}}">
+
+<!--
+
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="{{ url_for('index')}}" class="logo">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="{{ url_for('index')}}" class="active">Home</a></li>
+                            <!-- <li class="scroll-to-section"><a href="index.html">Men's</a></li>
+                            <li class="scroll-to-section"><a href="index.html">Women's</a></li>
+                            <li class="scroll-to-section"><a href="index.html">Kid's</a></li>-->
+                            <li><a href="{{ url_for('about')}}">About Us</a></li> 
+                            <!-- <li><a href="{{ url_for('products')}}">Products</a></li> -->
+                            <li><a href="{{ url_for('contact')}}">Contact Us</a></li>
+                            <!-- <li class="submenu">
+                                <a href="javascript:;">Pages</a>
+                                <ul>
+                                    <li><a href="single-product.html">Single Product</a></li>
+                                </ul>
+                            </li> -->
+                            <!-- <li class="submenu">
+                                <a href="javascript:;">Features</a>
+                                <ul>
+                                    <li><a href="#">Features Page 1</a></li>
+                                    <li><a href="#">Features Page 2</a></li>
+                                    <li><a href="#">Features Page 3</a></li>
+                                    <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="scroll-to-section"><a href="{{ url_for('login_option')}}">Login/Register</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+                        <h2>HexaShop Products</h2>
+                        <span>You can choose from a few pre-designed costumes.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+
+    <!-- ***** Products Area Starts ***** -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Latest Products</h2>
+                        <span>Check out all of our products.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <!-- <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul> -->
+                            </div>
+                            <a href="{{ url_for('women01')}}"> <img src="{{ url_for('static', filename='images/women-01.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women01')}}"><h4>Indian Lahenga</h4></a>
+                            <span>₹35,000</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <!-- <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul> -->
+                            </div>
+                            <a href="{{ url_for('women09')}}"><img src="{{ url_for('static', filename='images/women-09.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women09')}}"><h4>Cinderella Gown Blue</h4></a>
+                            <span>₹50,000</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <!-- <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul> -->
+                            </div>
+                            <a href="{{ url_for('women07')}}"><img src="{{ url_for('static', filename='images/women-07.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women07')}}"><h4>Traditional Ottoman Dress</h4></a>
+                            <span>₹40,000</span>
+                            <ul class="stars"><br>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <!-- <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul> -->
+                            </div>
+                           <a href="{{ url_for('women04')}}"><img src="{{ url_for('static', filename='images/women-04.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women04')}}"><h4>Pakistani Suit</h4></a>
+                            <span>₹6,000</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <!-- <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul> -->
+                            </div>
+                            <a href="{{ url_for('women02')}}"><img src="{{ url_for('static', filename='images/women-02.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women02')}}"><h4>Classical Nauvari Saree</h4></a>
+                            <span>₹25,000</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                               
+                            </div>
+                            <a href="{{ url_for('women03')}}"><img src="{{ url_for('static', filename='images/women-03.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women03')}}"><h4>White Wedding Gown</h4></a>
+                            <span>₹27,000</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                               
+                            </div>
+                           <a href="{{ url_for('women08')}}"><img src="{{ url_for('static', filename='images/women-08.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women08')}}"><h4>Designer Abaya</h4></a>
+                            <span>₹4,000</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                               
+                            </div>
+                            <a href="{{ url_for('women05')}}"><img src="{{ url_for('static', filename='images/women-05.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women05')}}"><h4>Blue Indo-Western Suit</h4></a>
+                            <span>₹5,000</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                               
+                            </div>
+                            <a href="{{ url_for('women06')}}"><img src="{{ url_for('static', filename='images/women-06.jpg') }} " alt=""></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="{{ url_for('women06')}}"><h4>Red-White Kannjivaram Saree</h4></a>
+                            <span>₹22,000</span>
+                            <ul class="stars"><br>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-12">
+                    <div class="pagination">
+                        <ul>
+                            <li class="active">
+                                <a href="{{ url_for('products')}}">1</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('products2')}}">2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Products Area Ends ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="{{ url_for('static', filename='images/white-logo.png') }}" alt="">
+                        </div>
+                        <ul>
+                            <li><a href="#">201, shadawal apt., mahadev nagar, boisar</a></li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">+91-9242424240</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="{{ url_for('products')}}">Women’s Garments</a></li>
+                        <li><a href="{{ url_for('shoe_print')}}">Shoes</a></li>
+                        <li><a href="{{ url_for('tshirt_print')}}">T Shirt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="{{ url_for('index')}}">Homepage</a></li>
+                        <li><a href="{{ url_for('about')}}">About Us</a></li>
+                        <!-- <li><a href="#">Help</a></li> -->
+                        <li><a href="{{ url_for('contact')}}">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div> -->
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
+                        
+                        <!-- <br>Design: <a href="#" title="free css templates">TemplateMo</a> -->
+
+                        <br>Distributed By: <a href="#">Pragati Jagtap</a></p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+   <!-- jQuery -->
+   <script src="{{ url_for('static', filename='js/jquery-2.1.0.min.js') }}"></script>
+
+   <!-- Bootstrap -->
+   <script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+   <!-- Plugins -->
+   <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/accordions.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/datepicker.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/scrollreveal.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/imgfix.min.js') }}"></script> 
+   <script src="{{ url_for('static', filename='js/slick.js') }}"></script> 
+   <script src="{{ url_for('static', filename='js/lightbox.js') }}"></script> 
+   <script src="{{ url_for('static', filename='js/isotope.js') }}"></script> 
+   
+   <!-- Global Init -->
+   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+
+</html>

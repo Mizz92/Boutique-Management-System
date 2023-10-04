@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Hexashop - About Page</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-hexashop.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lightbox.css')}}">
+<!--
+
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="{{ url_for('index')}}" class="logo">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="{{ url_for('index')}}" class="active">Home</a></li>
+                            <!-- <li class="scroll-to-section"><a href="index.html">Men's</a></li>
+                            <li class="scroll-to-section"><a href="index.html">Women's</a></li>
+                            <li class="scroll-to-section"><a href="index.html">Kid's</a></li> -->
+                            <li><a href="{{ url_for('about')}}">About Us</a></li> 
+                            <!-- <li><a href="{{ url_for('products')}}">Products</a></li> -->
+                            <li><a href="{{ url_for('contact')}}">Contact Us</a></li>
+                            <!-- <li class="submenu">
+                                <a href="javascript:;">Pages</a>
+                                <ul>
+                                    <li><a href="single-product.html">Single Product</a></li>
+                                </ul>
+                            </li> -->
+                            <!-- <li class="submenu">
+                                <a href="javascript:;">Features</a>
+                                <ul>
+                                    <li><a href="#">Features Page 1</a></li>
+                                    <li><a href="#">Features Page 2</a></li>
+                                    <li><a href="#">Features Page 3</a></li>
+                                    <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="scroll-to-section"><a href="{{ url_for('login_option')}}">Login/Register</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading about-page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+                        <h2>About Our Company</h2>
+                        <span>We offer you the finest apparel in the style that you choose.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-image">
+                        <img src="{{ url_for('static', filename='images/about-left-image.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <h4>About Us &amp; Our Skills</h4>
+                        <span>We are committed to giving our consumers a distinctive purchasing experience. Each piece in the boutique's inventory is meticulously chosen to fulfil our strict criteria for quality, style, and price. We are experts in women's clothes, and our collections include both up-to-the-minute trends and timeless classics.</span>
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i><p>What you wear is how you present yourself to the world, especially today, when human contacts are so quick.</p>
+                        </div>
+                        <p>Our dedication to offering personalised customer service is among the characteristics that make our boutique stand ahead. We love assisting our customers in selecting the ideal attire for any occasion because our team members are experienced in fashion and styling. We have something for every style and price range, whether it's a formal event or a casual weekend brunch.</p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** About Area Ends ***** -->
+
+    <!-- ***** Our Team Area Starts ***** -->
+    <section class="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Collaboration</h2>
+                        <span>A few of these fashion designers collaborate with us.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-item">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <ul>
+                                        <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+                                        <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                                        <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                                        <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <img src="{{ url_for('static', filename='images/team-member-01.jpg') }}">
+                        </div>
+                        <div class="down-content">
+                            <h4>Manish Malhotra</h4>
+                            <span>Finest Fashion Designer in India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-item">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <!-- <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                                        <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <img src="{{ url_for('static', filename='images/team-member-02.jpg') }}">
+                        </div>
+                        <div class="down-content">
+                            <h4>Tarun Tahiliani</h4>
+                            <span>Indian Fashion Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-item">
+                        <div class="thumb">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <!-- <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                                        <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <img src="{{ url_for('static', filename='images/team-member-03.jpg') }}">
+                        </div>
+                        <div class="down-content">
+                            <h4>Rohit Bal</h4>
+                            <span>Indian Fashion Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Our Team Area Ends ***** -->
+
+    <!-- ***** Services Area Starts ***** -->
+    <section class="our-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Services</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item">
+                        <h4>Customization</h4>
+                        <p>Customers may choose the pattern and fabric for the apparel from our inventory. and seal that deal for them. along with several additional modifications.</p>
+                        <img src="{{ url_for('static', filename='images/service-01.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item">
+                        <h4>Shoe Section</h4>
+                        <p>In shoes, we have a printing option. where you can get your sneakers printed with whatever message you choose. </p>
+                        <img src="{{ url_for('static', filename='images/service-02.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item">
+                        <h4>T-Shirt Printing</h4>
+                        <p>We have a T-shirt printing department where any phrase that is chosen may be printed on the T-shirt and any desired graphic design</p>
+                        <img src="{{ url_for('static', filename='images/service-03.jpg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Services Area Ends ***** -->
+ 
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="{{ url_for('static', filename='images/white-logo.png') }}" alt="">
+                        </div>
+                        <ul>
+                            <li><a href="#">201, shadawal apt., mahadev nagar, boisar</a></li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">+91-9242424240</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="{{ url_for('products')}}">Women’s Garments</a></li>
+                        <li><a href="{{ url_for('shoe_print')}}">Shoes</a></li>
+                        <li><a href="{{ url_for('tshirt_print')}}">T Shirt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="{{ url_for('index')}}">Homepage</a></li>
+                        <li><a href="{{ url_for('about')}}">About Us</a></li>
+                        <!-- <li><a href="#">Help</a></li> -->
+                        <li><a href="{{ url_for('contact')}}">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div> -->
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
+                        
+                        <!-- <br>Design: <a href="#" title="free css templates">TemplateMo</a> -->
+
+                        <br>Distributed By: <a href="#">Pragati Jagtap</a></p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+   <!-- jQuery -->
+   <script src="{{ url_for('static', filename='js/jquery-2.1.0.min.js') }}"></script>
+
+   <!-- Bootstrap -->
+   <script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+   <!-- Plugins -->
+   <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/accordions.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/datepicker.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/scrollreveal.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/imgfix.min.js') }}"></script> 
+   <script src="{{ url_for('static', filename='js/slick.js') }}"></script> 
+   <script src="{{ url_for('static', filename='js/lightbox.js') }}"></script> 
+   <script src="{{ url_for('static', filename='js/isotope.js') }}"></script> 
+   
+   <!-- Global Init -->
+   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+
+</html>
